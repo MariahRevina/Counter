@@ -7,22 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    @IBOutlet weak var counterValue: UILabel!
+    @IBOutlet weak private var counterValueLabel: UILabel!
     
-    private var push = 0
+    private var counter = 0
     
-    @IBAction func button(_ sender: Any) {
-        push += 1
-        counterValue.text = "Значение счётчика: \(push)"
+    private func updateCounter () {
+        
+        counter += 1
+        counterValueLabel.text = "Значение счётчика: \(counter)"
+        
+    }
+    @IBAction private func didTapCounterButton(_ sender: Any) {
+        updateCounter ()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
