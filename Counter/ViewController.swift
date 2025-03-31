@@ -9,9 +9,15 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    @IBOutlet weak private var counterValueLabel: UILabel!
     
+ 
+    
+    @IBOutlet weak private var counterValueLabel: UILabel!
     private var counter = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     private func updateCounter () {
         
@@ -23,8 +29,6 @@ final class ViewController: UIViewController {
         updateCounter ()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    
 }
 
