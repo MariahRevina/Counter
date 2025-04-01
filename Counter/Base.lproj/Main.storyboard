@@ -16,8 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="fw0-d0-30f">
+                                <rect key="frame" x="97" y="148" width="225" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66602080200000002" green="0.86280508990000004" blue="0.91419908220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Значение счётчика: 0">
+                                        <attributes>
+                                            <font key="NSFont" size="29" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfw-Cc-Dzo">
-                                <rect key="frame" x="97" y="443" width="225" height="151"/>
+                                <rect key="frame" x="97" y="474" width="225" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="tinted" cornerStyle="large">
                                     <attributedString key="attributedTitle">
@@ -41,31 +55,15 @@
                                     <color key="baseBackgroundColor" red="1" green="0.50715309726923075" blue="0.89283557757552456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWA-f5-kFJ"/>
+                                    <action selector="didTapCounterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5o-hL-he9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="fw0-d0-30f">
-                                <rect key="frame" x="97" y="148" width="225" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.66602080200000002" green="0.86280508990000004" blue="0.91419908220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Значение счётчика: 0">
-                                        <attributes>
-                                            <font key="NSFont" size="29" name="AmericanTypewriter-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="CounterValue" destination="fw0-d0-30f" id="lCM-F4-whW"/>
                         <outlet property="counterValueLabel" destination="fw0-d0-30f" id="0Sf-29-DGi"/>
-                        <outlet property="couterValueLabel" destination="fw0-d0-30f" id="j0P-84-2de"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

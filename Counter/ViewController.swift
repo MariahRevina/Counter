@@ -28,7 +28,5 @@ final class ViewController: UIViewController {
     @IBAction private func didTapCounterButton(_ sender: Any) {
         updateCounter ()
     }
-    
-    
 }
 
